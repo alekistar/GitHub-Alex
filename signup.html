@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Sign Up Page</title>
+  
+</head>
+
+<body>
+  <div class="signup">
+  <h1><i><b><u>WELCOME TO MY SIGN UP PAGE.😂😂</u></b></i></h1>
+  <h2><i>PLEASE INPUT YOUR PERSONAL DETAILS BELOW 😎😎</i></h2> 
+  </div>
+    <style>
+
+        .login-container {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        body {
+           background-color: yellowgreen;
+           background: url('/IMG_3547_animation.mp4');
+           background-size: cover;
+           background-position: center;
+           background-repeat: no-repeat;
+           }
+           .signup{
+             background-color: sandybrown;
+             padding: 20px;
+             margin-bottom: 20px;
+             border-radius: 5px;
+             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+           }
+
+
+        input { 
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+           .signup-container {
+             text-align: center;
+             padding: 20px;
+             background-color: #fff;
+             border-radius: 8px;
+             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+           }
+        
+           button {
+             background-color: #4CAF50;
+             color: white;
+             padding: 10px;
+             border: none;
+             border-radius: 4px;
+             cursor: pointer;
+           }
+    </style>
+    <title>Sign Up Page</title>
+                        
+</head>
+<body>
+    <div class="login-container">
+        <img src="/IMG_3901.jpeg" width="110px" length="260px">
+        <h2>Sign Up</h2>
+         <form action="script.php" method="post">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="password" name="confirm password" placeholder="Confirm password" required>
+                <a class="a" href="home2.html">Sign Up</a>
+        </form>
+    </div>
+</body>
+
+  
+  <p></p>
+  
+  <script src="main.js">
+        var username = document.getElementById('username').value;
+        var password = document.getElementById('password').value;
+    
+    
+        if (username && password) {
+          window.location.href = 'home2.html';
+        } else {
+          alert('Invalid credentials. Please try again.');
+        }
+   }
+  </script>
+</body>
+</html>
